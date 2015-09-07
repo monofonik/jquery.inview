@@ -5,7 +5,7 @@
  */
 (function ($) {
   var inviewObjects = {}, viewportSize, viewportOffset,
-      d = document, w = window, documentElement = d.documentElement, expando = $.expando, timer;
+      w = window.top, d = w.document, documentElement = d.documentElement, expando = $.expando, timer;
 
   $.event.special.inview = {
     add: function(data) {
